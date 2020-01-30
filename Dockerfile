@@ -6,6 +6,7 @@ RUN apk update \
     && true
 
 RUN gem install rubocop -v 0.79.0
+RUN gem install rubocop-rails -v 2.4.1
 
 RUN rm -rf /usr/local/bundle/cache/*.gem \
  && find /usr/local/bundle/gems/ -name "*.c" -delete \
